@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hue.pvt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="menu.png" alt="" class="menu-img" />
+        <img src="logo.png" alt="" class="logo" />
+        <ul>
+          <li><a href="">Latest</a></li>
+          <li><a href="">Modern</a></li>
+          <li><a href="">Contemporary</a></li>
+          <li><a href="">Affordable</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn">
+          <span></span>
+        </button>
+      </nav>
+
+      <div class="lamp-container">
+        <img src="lamp.png" alt="" class="lamp" />
+        <img src="light.png" alt="" class="light" id="light" />
+      </div>
+
+      <div class="text-container">
+        <h1>
+          Brighten <br />
+          your Life
+        </h1>
+        <p>
+          Lamps are accessories which have both a decorative and practical
+          element for your interior space. As a decorative element, they add a
+          warm aesthetic glow, and as a practical element, they provide
+          illumination to your bedside table, desks and counter tops.
+        </p>
+        <a href="">Check All Collections</a>
+        <div class="control">
+          <p>01</p>
+          <div class="line"><span></span></div>
+          <p>05</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var btn = document.getElementById("btn");
+      var light = document.getElementById("light");
+
+      function toggleBtn() {
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+      }
+    </script>
+  </body>
+</html>
